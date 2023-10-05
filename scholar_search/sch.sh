@@ -1,6 +1,6 @@
 unix_millis="$(date +%s%3N)"
 [ -d /tmp/sch_sh/ ] || mkdir /tmp/sch_sh
-printf "\033[0;32mEnter your Prompt:\033[00m"
+printf "\033[0;32mEnter your Prompt:\033[00m\n"
 read -e searchquery1
 #searchquery1="protein structure"
 searchquery="$(echo $searchquery1 | sed 's/ /+/g'  )"
